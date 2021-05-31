@@ -1,0 +1,24 @@
+.principal {
+  background-color: #90a081;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.sidebar {
+  background-color: #f1ac7b;
+}
+.consola {
+  background-color: #1e1e1e;
+  height: 80%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  overflow-y: auto;
+  flex: 1;
+}
+.consola pre {
+  color: #12bc5c;
+}
+.contenedor-boton {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
