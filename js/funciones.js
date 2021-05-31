@@ -81,8 +81,9 @@ const equiposPorTipo = (equipos) =>
     const subResultado = acumulador.find((equipo) => equipo.tipo === tipo);
     if (subResultado) {
       subResultado.equipos.push(equipo);
+      return acumulador;
     } else {
-      acumulador = [
+      return [
         ...acumulador,
         {
           tipo,
@@ -90,7 +91,6 @@ const equiposPorTipo = (equipos) =>
         },
       ];
     }
-    return acumulador;
   }, []);
 
 const equiposTipoLocalidad = (equipos, tipoEquipo, localidad) =>
